@@ -9,3 +9,12 @@ const palindromes = (function(arr) {
 })(["level", "hello", "radar", "world", "deified"]);
 console.log(palindromes);
 console.log(getPalindromes);
+
+
+// Arrow function
+const getPalindrome = arr => {
+    return arr.filter(str => str === str.split('').reverse().join(''));
+}
+
+console.log(getPalindrome(["level", "hello", "radar", "world", "deified"]));
+
