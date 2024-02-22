@@ -20,3 +20,12 @@ printOddNumbers([1, 2, 3, 4, 5]);
     }
 })([1, 2, 3, 4, 5]);
 
+const printOddNumber = arr => {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 !== 0) {
+            console.log(arr[i]);
+        }
+    }
+}
+
+printOddNumber([1, 2, 3, 4, 5]);
